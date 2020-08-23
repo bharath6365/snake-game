@@ -4,13 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Snake Game</title>
+  <title>Hungry Cobra</title>
   <script src="game.js" defer type="module"></script>
+  <script src="settings.js" defer type="module"></script>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" size="16x16" type="image/png" href="/images/favicon.ico" />
 </head>
 <body>
   <div class="board">
-
   </div>
+
+  <aside>
+    <div class="aside-inner">
+      <h2>Settings</h2>
+      <form id="settings">
+        <div>
+          <input id="speed" type="range" min="3" max="15" range="2" />
+          <label for="speed">Snake Speed</label>
+        </div>
+        
+        <div> 
+          <input id="growth" type="range" min="2" max="8" range="1" />
+          <label for="growth">Snake Expansion</label>
+        </div>
+
+        <input type="submit" value="Apply">
+      </form>
+    </div>
+  </aside>
 </body>
 </html>

@@ -10,24 +10,58 @@ body {
   justify-content: center;
   align-items: center;
   background: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .board {
   width: 100vmin;
   height: 100vmin;
-  background: #ccc;
+  background: #4d527b;
   display: grid;
   grid-template-rows: repeat(21, 1fr);
   grid-template-columns: repeat(21, 1fr);
 }
 
 .snake {
-  background: #c9628b;
-  border-radius: 2px;
+  background: #522f2f;
+  border-radius: 3px;
   border: 0.25vmin solid black;
 }
 
 .food {
   background: #eae87b;
   border: 0.25vmin solid black;
+}
+
+aside {
+  padding: 30px 0;
+  color: white;
+  position: fixed;
+  content: '';
+  height: 100vh;
+  right: 0px;
+  top: 0;
+  width: 20vw;
+}
+
+form {
+  padding: 20px 0;
+}
+
+form > div {
+  margin: 10px 0;
+}
+
+form input[type="submit"]{
+  background: yellow;
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+@media(max-width: 960px) {
+  aside {
+    display: none;
+  }
 }

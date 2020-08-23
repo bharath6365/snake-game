@@ -1,8 +1,10 @@
 import {getDirection} from './userInput.js';
 // How many times snake moves per second.
-export const SNAKE_SPEED = 5;
+export const SNAKE_DEFAULT_SPEED = 5;
+export const SNAKE_SPEED = Number.parseInt(localStorage.getItem('speed')) || SNAKE_DEFAULT_SPEED;
 
-export const SNAKE_EXPANSION_RATE = 4;
+export const SNAKE_DEFAULT_EXPANSION_RATE = 4;
+export const SNAKE_EXPANSION_RATE = Number.parseInt(localStorage.getItem('growth')) || SNAKE_DEFAULT_EXPANSION_RATE;
 
 // Segments that are added to the snake dynamically when it eats food.
 let addedSegments = 0;

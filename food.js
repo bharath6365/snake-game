@@ -24,10 +24,8 @@ export const draw = (gameBoard) => {
 export const update = () => {
   // Collision. Increase the size of the snake.
   if (snakeOnFood(foodPosition)) {
-    console.log('Collision');
     expandSnake(SNAKE_EXPANSION_RATE);
     foodPosition = getRandomFoodPosition();
-    console.log('New Food Position is', foodPosition);
   }
 }
 
