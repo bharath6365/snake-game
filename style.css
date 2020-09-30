@@ -39,9 +39,15 @@ aside {
   position: fixed;
   content: '';
   height: 100vh;
-  right: 0px;
+  left: 20px;
   top: 0;
   width: 20vw;
+  max-width: 290px;
+}
+
+aside p {
+  margin: 5px 0 5px;
+  font-size: 0.75rem;
 }
 
 form {
@@ -52,6 +58,10 @@ form > div {
   margin: 10px 0;
 }
 
+form label {
+  font-size: 0.925rem;
+}
+
 form input[type="submit"]{
   background: yellow;
   outline: none;
@@ -60,7 +70,7 @@ form input[type="submit"]{
   cursor: pointer;
 }
 
-@media(max-width: 960px) {
+@media(max-width: 1250px) {
   aside {
     display: none;
   }
